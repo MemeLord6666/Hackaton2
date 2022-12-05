@@ -16,7 +16,7 @@ let searchValue = inpSearch.value
 let prevBtn = document.querySelector("#prev-btn")
 let nextBtn = document.querySelector("#next-btn")
 let currentPage = 1
-let limit = 1000
+let limit = 4
 
 // DIV
 let section_add = document.querySelector(".section_add")
@@ -129,6 +129,7 @@ async function readProducts() {
      ` ;
       table.append(tr)
     });
+    pageTotal()
     adminReturn()
   }
   readProducts();
